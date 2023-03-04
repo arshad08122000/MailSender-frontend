@@ -18,7 +18,7 @@ function App() {
     console.log("Description :",description);
 
 
-   const response=await axios.post("http://localhost:8000/mail",data);
+   const response = await axios.post("https://mailsender-api.onrender.com/mail",data);
    console.log(response);
    alert("Mail Sended");
    window.location.reload(false);
